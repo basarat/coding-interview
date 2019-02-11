@@ -1,0 +1,36 @@
+{
+  "name": "coding-interview",
+  "version": "0.0.0",
+  "description": "The free guide to smashing the coding interview",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "npm install && npm run test:live",
+    "test": "tsc -p . && jest",
+    "test:live": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basarat/coding-interview.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "algorithms",
+    "data-structures",
+    "coding-interview",
+    "interview"
+  ],
+  "author": "basaratali@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basarat/coding-interview/issues"
+  },
+  "homepage": "https://github.com/basarat/coding-interview#readme",
+  "devDependencies": {
+    "@types/jest": "22.2.3",
+    "@types/node": "7.0.12",
+    "jest": "22.4.3",
+    "ts-jest": "22.4.3",
+    "typescript": "2.8.1"
+  }
+}
