@@ -1,7 +1,7 @@
 ﻿/** 
  * Given a string, returns the maximum consecutive repeating character in string.
  * Examples:
- * 'AAAABBBCCCCCC' => 'C'
+ * 'AAAABBBCCCCCCAAAA' => 'C'
  * 'FooBarBaa' => 'o'
  * '🌹👍👍🌹🌹👍👍🌹🌹🌹👍' => '🌹'
  * '' => ''
@@ -16,10 +16,10 @@ export function longestConsecutiveCharacter(input: string): string {
     if (char === currentChar) {
       currentCharCount++;
     } else {
-      currentCharCount = 1;
       currentChar = char;
+      currentCharCount = 1;
     }
-    
+
     if (currentCharCount > resultCharCount) {
       resultChar = char;
       resultCharCount = currentCharCount;
