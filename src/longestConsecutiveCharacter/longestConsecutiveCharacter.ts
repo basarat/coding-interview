@@ -2,7 +2,7 @@
  * Given a string, returns the maximum consecutive repeating character in string.
  * Examples:
  * 'AAAABBBCCCCCC' => 'C'
- * 'AnotherExample' => 'A'
+ * 'FooBarBaa' => 'o'
  * '🌹👍👍🌹🌹👍👍🌹🌹🌹👍' => '🌹'
  * '' => ''
  */
