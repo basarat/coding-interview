@@ -28,10 +28,10 @@
   },
   "homepage": "https://github.com/basarat/coding-interview#readme",
   "devDependencies": {
-    "@types/jest": "24.0.0",
-    "@types/node": "10.12.24",
-    "jest": "24.1.0",
-    "ts-jest": "23.10.5",
-    "typescript": "3.3.3"
+    "@types/jest": "24.0.15",
+    "@types/node": "12.6.3",
+    "jest": "24.8.0",
+    "ts-jest": "24.0.2",
+    "typescript": "3.5.3"
   }
 }
