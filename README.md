@@ -1,6 +1,6 @@
 # Coding Interview
 
-[![Build Status][travis-image]][travis-url]
+![CI Status](https://github.com/basarat/coding-interview/workflows/Continuous%20Integration/badge.svg)
 
 * [YouTube 🌹](https://youtube.com/basaratali)
 
@@ -9,10 +9,12 @@
 # Solutions
 Each solution code is in a subfolder under [src](https://github.com/basarat/coding-interview/tree/master/src).
 
+## Maintaining Loop Invariants
+Coming Soon
+
 ## FizzBuzz
-* [Video Lesson](https://www.youtube.com/watch?v=YKOrCXSHJk8)
-* [Code](https://github.com/basarat/coding-interview/tree/master/src/fizzBuzz)
+Coming Soon
 
+## Longest Consecutive Character
+Coming Soon
 
-[travis-image]:https://travis-ci.org/basarat/coding-interview.svg?branch=master
-[travis-url]:https://travis-ci.org/basarat/coding-interview
