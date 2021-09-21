@@ -1,6 +1,6 @@
 # Coding Interview
 
-![CI Status](https://github.com/basarat/coding-interview/workflows/Continuous%20Integration/badge.svg)
+[![CI Status](https://github.com/basarat/coding-interview/workflows/Continuous%20Integration/badge.svg)](https://github.com/basarat/coding-interview/actions/workflows/ci.yml)
 
 * [YouTube 🌹](https://youtube.com/basaratali)
 
