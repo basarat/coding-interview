@@ -1,26 +1,25 @@
 ﻿/** 
  * Given a string, returns the maximum consecutive repeating character in string.
- * Example: 'AAAABBBCCCCCCAAAA' => 'C'
+ * Examples:
+ *  'AAAABBBCCCCCCAAAA' => 'C'
+ *  'FooBarBaa' => 'o'
+ *  '🌹👍👍🌹🌹👍👍🌹🌹🌹👍' => '🌹'
  */
 export function longestConsecutiveCharacter(input: string): string {
-  let resultChar = '',
-    resultCharCount = 0,
-    currentChar = '',
-    currentCharCount = 0;
+  let longest = { char: '', count: 0 };
+  let current = { char: '', count: 0 };
 
   for (const char of input) {
-    if (char === currentChar) {
-      currentCharCount++;
+    if (char === current.char) {
+      current.count++;
     } else {
-      currentChar = char;
-      currentCharCount = 1;
+      current = { char, count: 0 };
     }
 
-    if (currentCharCount > resultCharCount) {
-      resultChar = char;
-      resultCharCount = currentCharCount;
+    if (current.count > longest.count) {
+      longest = { ...current };
     }
   }
 
-  return resultChar;
+  return longest.char;
 }
