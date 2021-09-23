@@ -13,7 +13,7 @@ export function longestConsecutiveCharacter(input: string): string {
     if (char === current.char) {
       current.count++;
     } else {
-      current = { char, count: 0 };
+      current = { char, count: 1 };
     }
 
     if (current.count > longest.count) {
