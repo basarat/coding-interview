@@ -5,8 +5,7 @@
  *  - for multiples of five, print Buzz (instead of the number)
  *  - for multiples of both three and five, print FizzBuzz (instead of the number)
  */
-
-for (let index = 1; index < 101; index++) {
+for (let index = 1; index <= 100; index++) {
   let result = '';
 
   if (index % 3 == 0) result += 'Fizz';
