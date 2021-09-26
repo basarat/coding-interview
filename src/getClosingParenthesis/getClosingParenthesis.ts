@@ -1,10 +1,9 @@
 /** 
  * Given an @param input string, and an opening parenthesis @param openingIndex,
  *   return the corresponding closing parenthesis index if any (or return `null`)
- * 
  * Example: 
  *  `Betty (had (a bit) of butter (but the (butter))) was bitter`
- *   input ^                          should return ^       
+ *   input ^                          should return ^
  */
 export function getClosingParenthesis(input: string, openingIndex: number): number | null {
   if (input.length <= openingIndex) throw new Error('Out of bounds opening index');
