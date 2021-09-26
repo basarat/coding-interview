@@ -12,7 +12,6 @@ export function getClosingParenthesis(input: string, openingIndex: number): numb
   let nestedOpened = 0;
   for (let index = openingIndex + 1; index < input.length; index++) {
     const char = input[index];
-
     if (char == '(') {
       nestedOpened++;
     } else if (char == ')') {
