@@ -20,7 +20,7 @@ export class LinkedList<T> {
     const node = {
       value,
       next: null
-    }
+    };
     if (!this.head) {
       this.head = node;
     }
@@ -54,3 +54,9 @@ export class LinkedList<T> {
     }
   }
 }
+
+// const list = new LinkedList<number>();
+// [1, 3, 9, 12].forEach(item => list.add(item));
+// for (const item of list.values()) {
+//   console.log(item);
+// }
