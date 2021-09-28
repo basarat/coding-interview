@@ -10,8 +10,8 @@ export type LinkedListNode<T> = {
  * Linked list for items of type T
  */
 export class LinkedList<T> {
-  public head: LinkedListNode<T> | null = null;
-  public tail: LinkedListNode<T> | null = null;
+  head: LinkedListNode<T> | null = null;
+  tail: LinkedListNode<T> | null = null;
 
   /**
    * Adds an item in O(1)
