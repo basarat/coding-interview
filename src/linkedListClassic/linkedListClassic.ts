@@ -11,23 +11,24 @@ export type LinkedListNode<T> = {
  */
 export class LinkedList<T> {
   head: LinkedListNode<T> | null = null;
-  tail: LinkedListNode<T> | null = null;
 
   /**
-   * Adds an item in O(1)
+   * Adds an item in O(n)
    **/
   add(value: T) {
     const node = {
       value,
       next: null,
     };
-    if (!this.head) {
+    if (this.head == null) {
       this.head = node;
+    } else {
+      let tail = this.head;
+      while (tail.next != null) {
+        tail = tail.next;
+      }
+      tail.next = node;
     }
-    if (this.tail) {
-      this.tail.next = node;
-    }
-    this.tail = node;
   }
 
   /**
@@ -37,9 +38,6 @@ export class LinkedList<T> {
     if (!this.head) return null;
     const value = this.head.value;
     this.head = this.head.next;
-    if (!this.head) {
-      this.tail = null;
-    }
     return value;
   }
 
