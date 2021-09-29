@@ -10,7 +10,7 @@ test('basic', () => {
   expect(Array.from(list.values())).toMatchObject([10, 5]);
   expect(list.dequeue()).toBe(10);
   expect(list.dequeue()).toBe(5);
-  expect(list.dequeue()).toBe(undefined);
+  expect(list.dequeue()).toBe(null);
   expect(Array.from(list.values())).toMatchObject([]);
   list.add(5);
   expect(Array.from(list.values())).toMatchObject([5]);
