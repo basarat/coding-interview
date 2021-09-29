@@ -9,7 +9,7 @@ export type LinkedListNode<T> = {
 /**
  * Linked list for items of type T
  */
-export class LinkedList<T> {
+export class LinkedListClassic<T> {
   head: LinkedListNode<T> | null = null;
 
   /**
@@ -20,14 +20,14 @@ export class LinkedList<T> {
       value,
       next: null,
     };
-    if (this.head == null) {
+    if (!this.head) {
       this.head = node;
     } else {
-      let tail = this.head;
-      while (tail.next != null) {
-        tail = tail.next;
+      let currentTail = this.head;
+      while (currentTail.next != null) {
+        currentTail = currentTail.next;
       }
-      tail.next = node;
+      currentTail.next = node;
     }
   }
 
@@ -53,7 +53,7 @@ export class LinkedList<T> {
   }
 }
 
-// const list = new LinkedList<number>();
+// const list = new LinkedListClassic<number>();
 // [1, 3, 9, 12].forEach(item => list.add(item));
 // for (const item of list.values()) {
 //   console.log(item);

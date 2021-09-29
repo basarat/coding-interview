@@ -1,7 +1,7 @@
-import { LinkedList } from './linkedListClassic';
+import { LinkedListClassic } from './linkedListClassic';
 
 test('basic', () => {
-  const list = new LinkedList<number>();
+  const list = new LinkedListClassic<number>();
   list.add(1);
   list.add(10);
   list.add(5);
