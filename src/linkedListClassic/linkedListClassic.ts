@@ -52,9 +52,3 @@ export class LinkedListClassic<T> {
     }
   }
 }
-
-// const list = new LinkedListClassic<number>();
-// [1, 3, 9, 12].forEach(item => list.add(item));
-// for (const item of list.values()) {
-//   console.log(item);
-// }

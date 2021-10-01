@@ -17,7 +17,7 @@ export class LinkedList<T> {
    * Adds an item in O(1)
    **/
   add(value: T) {
-    const node = {
+    const node: LinkedListNode<T> = {
       value,
       next: null,
     };
@@ -54,9 +54,3 @@ export class LinkedList<T> {
     }
   }
 }
-
-// const list = new LinkedList<number>();
-// [1, 3, 9, 12].forEach(item => list.add(item));
-// for (const item of list.values()) {
-//   console.log(item);
-// }
