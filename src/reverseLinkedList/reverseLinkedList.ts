@@ -1,7 +1,9 @@
 import { LinkedList, LinkedListNode } from '../linkedList/linkedList';
 
 /** 
- * Reverse a linked list in place 
+ * Reverse a linked list in place
+ * Space: O(1)
+ * Time: O(n)
  */
 export function reverseLinkedList<T>(list: LinkedList<T>) {
   let previous: LinkedListNode<T> | null = null;
