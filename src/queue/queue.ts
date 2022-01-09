@@ -5,7 +5,7 @@
 export class Queue<T>{
   private data: { [index: number]: T } = Object.create(null);
   private nextEnqueueIndex = 0;
-  private lastDequeuedIndex = 0;
+  private nextDequeueIndex = 0;
 
   /** Enqueues the item in O(1) */
   enqueue(item: T): void {
@@ -18,10 +18,10 @@ export class Queue<T>{
    * If there are no more items it returns `undefined`
    */
   dequeue(): T | undefined {
-    if (this.lastDequeuedIndex !== this.nextEnqueueIndex) {
-      const dequeued = this.data[this.lastDequeuedIndex];
-      delete this.data[this.lastDequeuedIndex];
-      this.lastDequeuedIndex++;
+    if (this.nextDequeueIndex !== this.nextEnqueueIndex) {
+      const dequeued = this.data[this.nextDequeueIndex];
+      delete this.data[this.nextDequeueIndex];
+      this.nextDequeueIndex++;
       return dequeued;
     }
   }
@@ -30,6 +30,6 @@ export class Queue<T>{
    * Returns the number of elements in the queue
    */
   size(): number {
-    return this.nextEnqueueIndex - this.lastDequeuedIndex;
+    return this.nextEnqueueIndex - this.nextDequeueIndex;
   }
 }
