@@ -11,13 +11,16 @@
  */
 export function twoSum(nums: number[], target: number): [number, number] {
   const numToIndex = new Map<number, number>();
+
   for (let index = 0; index < nums.length; index++) {
     const num = nums[index];
+
     const complement = target - num;
     const complementIndex = numToIndex.get(complement);
     if (complementIndex != null) {
       return [complementIndex, index];
     }
+
     numToIndex.set(num, index);
   }
 
