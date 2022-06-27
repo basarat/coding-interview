@@ -2,7 +2,7 @@
  * Given a @param nums array
  * @returns all the triplets `[nums[i], nums[j], nums[k]]` such that
  *  - nums[i] + nums[j] + nums[k] == 0
- *  - i != j, i != k, and j != k  (don't repeat elements)
+ *  - i != j, i != k, and j != k (don't reuse individual array members)
  *  - the solution set must not contain duplicate triplets.
  * 
  * @example
