@@ -10,8 +10,8 @@
  */
 export function threeSum(nums: number[]): [number, number, number][] {
   const result: [number, number, number][] = [];
-  
-  nums.slice().sort();
+
+  nums = nums.slice().sort((a, b) => a - b);
 
   for (let i = 0; i < nums.length - 2; i++) {
     if (i > 0 && nums[i] === nums[i - 1]) {
