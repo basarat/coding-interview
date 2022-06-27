@@ -10,3 +10,5 @@
 # Solutions
 Each solution code is in a subfolder under [src](https://github.com/basarat/coding-interview/tree/master/src).
 
+Solutions come with tests. You can run all tests with `npm start`.
+
