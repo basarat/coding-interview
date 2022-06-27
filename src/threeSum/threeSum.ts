@@ -1,10 +1,9 @@
 /** 
  * Given a @param nums array
  * @returns all the triplets `[nums[i], nums[j], nums[k]]` such that
- *  - i != j, i != k, and j != k
- *  - and nums[i] + nums[j] + nums[k] == 0
- * 
- * Notice that the solution set must not contain duplicate triplets.
+ *  - nums[i] + nums[j] + nums[k] == 0
+ *  - i != j, i != k, and j != k  (don't repeat elements)
+ *  - the solution set must not contain duplicate triplets.
  * 
  * @example
  * - threeSum([-1, 0, 1, 2, -1, -4]) => ([ [-1,-1,2], [-1,0,1] ])
@@ -27,12 +26,8 @@ export function threeSum(nums: number[]): [number, number, number][] {
       if (sum === 0) {
         result.push([nums[i], nums[left], nums[right]]);
         left++;
-        right--;
-        while (left < right && nums[left] === nums[left - 1]) {
+        while (nums[left] === nums[left - 1] && left < right) {
           left++;
-        }
-        while (left < right && nums[right] === nums[right + 1]) {
-          right--;
         }
       } else if (sum < 0) {
         left++;
