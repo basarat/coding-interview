@@ -21,16 +21,16 @@ export function threeSum(nums: number[]): [number, number, number][] {
 
     while (left < right) {
       const sum = nums[i] + nums[left] + nums[right];
-      if (sum === 0) {
+      if (sum < 0) {
+        left++;
+      } else if (sum > 0) {
+        right--;
+      } else {
         result.push([nums[i], nums[left], nums[right]]);
         left++;
         while (nums[left] === nums[left - 1] && left < right) {
           left++;
         }
-      } else if (sum < 0) {
-        left++;
-      } else {
-        right--;
       }
     }
   }
