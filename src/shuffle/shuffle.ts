@@ -7,7 +7,7 @@ import { randomInt } from '../random/random';
 export function shuffle<T>(array: T[]): T[] {
   array = array.slice();
 
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length - 1; i++) {
     const randomIndex = randomInt(i, array.length - 1);
     [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
   }
