@@ -2,7 +2,7 @@
 
 [![CI Status](https://github.com/basarat/coding-interview/workflows/Continuous%20Integration/badge.svg)](https://github.com/basarat/coding-interview/actions/workflows/ci.yml)
 
-> If you like the solutions [please star ⭐ this repo 🌟](https://github.com/basarat/coding-interview/stargazers).
+> [Star ⭐ this repo 🌟 so you don't lose it 👀](https://github.com/basarat/coding-interview/stargazers).
 
 # The Video Lessons
 You can find them on [BooleanArt](https://www.booleanart.com/courses) 🌹
