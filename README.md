@@ -4,8 +4,8 @@
 
 > If you like the solutions [please star ⭐ this repo 🌟](https://github.com/basarat/coding-interview/stargazers).
 
-# The course
-You can find it on [BooleanArt](https://www.booleanart.com/courses) 🌹
+# The Video Lessons
+You can find them on [BooleanArt](https://www.booleanart.com/courses) 🌹
 
 # Solutions
 Each solution code is in a subfolder under [src](https://github.com/basarat/coding-interview/tree/master/src).
